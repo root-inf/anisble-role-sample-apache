@@ -1,0 +1,4 @@
+---
+# handlers file for apache
+- name: restart_httpd
+  command: /usr/sbin/apachectl -k restart
