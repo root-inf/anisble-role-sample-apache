@@ -3,7 +3,8 @@ dependency:
   name: galaxy
 lint: |
   set -e
-  ansible-lint . -x meta-incorrect,meta-no-info,package-latest,risky-file-permissions
+  ansible-lint .
+  #  ansible-lint . -x meta-incorrect,meta-no-info,package-latest,risky-file-permissions
 driver:
   name: podman
 platforms:
@@ -28,8 +29,8 @@ scenario:
     - create
     - prepare
     - converge
-    - idempotence
-    - side_effect
+#    - idempotence
+#    - side_effect
     - verify
     - cleanup
     - destroy
