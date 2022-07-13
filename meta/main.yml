@@ -1,6 +1,6 @@
 galaxy_info:
   author: your name
-  role_name: anisble-role-sample-apache
+  role_name: apache
   namespace: acme
   description: your role description
   company: your company (optional)
