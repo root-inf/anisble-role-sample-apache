@@ -15,5 +15,5 @@ jobs:
         run: |
           source ./venv/bin/activate
           pip install --upgrade pip
-          pip install ansible==5 ansible-lint molecule[podman]
+          pip install ansible==5.10.0 ansible-lint molecule[podman]
           molecule test
