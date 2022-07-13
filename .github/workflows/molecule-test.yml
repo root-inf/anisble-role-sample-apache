@@ -1,0 +1,18 @@
+name: Ansible Playbook
+on: push
+
+jobs:
+  role-test:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: create pythton venv
+        run: python3 -m venv venv
+
+      - name: activate venv
+        run: source ./venv/bin/activate
+
+      - name: test venv
+        run: which pip
