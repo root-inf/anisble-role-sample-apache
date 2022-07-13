@@ -12,7 +12,6 @@ jobs:
         run: python3 -m venv venv
 
       - name: activate venv
-        run: source ./venv/bin/activate
-
-      - name: test venv
-        run: which pip
+        run: |
+          source ./venv/bin/activate
+          which pip
