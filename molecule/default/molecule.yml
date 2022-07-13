@@ -22,9 +22,9 @@ scenario:
   test_sequence:
     - dependency
     - lint
-    - cleanup
-    - destroy
-    - syntax
+#    - cleanup
+#    - destroy
+#    - syntax
     - create
     - prepare
     - converge
