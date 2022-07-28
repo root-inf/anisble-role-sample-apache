@@ -3,8 +3,8 @@ dependency:
   name: galaxy
 lint: |
   set -e
-  git clone https://github.com/root-inf/ansible-lint-custom-rules-sample.git /tmp/
-  ansible-lint . -x meta-incorrect,meta-no-info,package-latest,risky-file-permissions,fqcn-builtins,experimental -r /tmp/ansible-lint-custom-rules-sample/rules
+  git clone https://github.com/root-inf/ansible-lint-custom-rules-sample.git ./lint/
+  ansible-lint . -x meta-incorrect,meta-no-info,package-latest,risky-file-permissions,fqcn-builtins,experimental -r ./lint/rules
 driver:
   name: podman
 platforms:
