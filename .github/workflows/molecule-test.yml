@@ -16,4 +16,5 @@ jobs:
           source ./venv/bin/activate
           pip install --upgrade pip
           pip install ansible==5.10.0 ansible-lint molecule[podman]
+          git clone https://github.com/root-inf/ansible-lint-custom-rules-sample.git ./lint/
           molecule lint
