@@ -3,7 +3,7 @@ dependency:
   name: galaxy
 lint: |
   set -e
-  ansible-lint -R -r ./lint/rules . -x meta-incorrect,meta-no-info,package-latest,risky-file-permissions,fqcn-builtins,experimental 
+  ansible-lint -R -r ./lint/ruless .
 driver:
   name: podman
 platforms:
