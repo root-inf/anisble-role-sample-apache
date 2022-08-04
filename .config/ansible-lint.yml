@@ -1,0 +1,7 @@
+# .config/ansible-lint.yml
+warn_list:  # or 'skip_list' to silence them completely
+  - experimental  # all rules tagged as experimental
+  - fqcn-builtins  # Use FQCN for builtin actions.
+  - meta-incorrect  # meta/main.yml default values should be changed.
+  - meta-no-info  # meta/main.yml should contain relevant info.
+  - package-latest  # Package installs should not use latest.
