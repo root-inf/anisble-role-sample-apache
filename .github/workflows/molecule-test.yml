@@ -1,4 +1,4 @@
-name: Ansible Playbook
+name: Test Ansible Role
 on: push
 
 jobs:
